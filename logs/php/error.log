@@ -1,0 +1,1 @@
+[24-Oct-2023 22:17:06 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/Arends/Local Sites/aesthetic-dentistry/app/public/wp-includes/class-wp-customize-widgets.php on line 905
