@@ -1,6 +1,27 @@
 <?php
 
-function aesthetic_assets() {
+if (!function_exists('ad_setup')) {
+    function ad_setup() {
+        // load_theme_textdomain('aesthetic-dentistry', get_template_directory() . '/languages');
+        add_theme_support('title-tag');
+        add_theme_support('posts-thumbnails');
+        add_theme_support( 'block-templates' );
+        add_theme_support('html5',
+            array('search-form', 'comment-form', 'gallery', 'caption')
+        );
+        add_theme_support('customize-selective-refresh-widgets');
+        add_theme_support('responsive_embeds');
+        register_nav_menus(
+            array(
+                'primary' => esc_html__('Primary Menu', 'aesthetic-dentistry')
+            )
+        );
+    }
+}
+
+add_action('after_setup_theme', 'ad_setup');
+
+function ad_assets() {
     wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css2?family=Comfortaa&display=swap', array(), '1.0', 'all' );
 
     wp_enqueue_style( 'theme-styles', get_stylesheet_uri(), array(), 1.0, 'all' );
@@ -12,4 +33,6 @@ function aesthetic_assets() {
     }
 }
 
-add_action('wp_enqueue_scripts', 'aesthetic_assets');
+add_action('wp_enqueue_scripts', 'ad_assets');
+
+require get_template_directory() . '/includes/customizer-ad.php';

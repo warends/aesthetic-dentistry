@@ -14,3 +14,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.en.html#license-text
 Text Domain: wolddmd
 */
 
+.dental-features img {
+    height: 200px;
+    width: 200px;
+}
