@@ -21,9 +21,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1><?php bloginfo('name');?> HOME</h1>
+                <h1><?php bloginfo('name');?></h1>
                 <h3><?php bloginfo('description');?></h3>
-                <?php the_content(); ?>
             </div>
         </div>
     </div>

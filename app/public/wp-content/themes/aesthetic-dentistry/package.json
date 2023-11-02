@@ -1,0 +1,27 @@
+{
+  "name": "aesthetic-dentistry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^6.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.2.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-noop": "^1.0.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-strip-debug": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss-assets": "^6.0.0"
+  }
+}
