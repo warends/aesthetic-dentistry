@@ -13,7 +13,8 @@ if (!function_exists('ad_setup')) {
         add_theme_support('responsive_embeds');
         register_nav_menus(
             array(
-                'primary' => esc_html__('Primary Menu', 'aesthetic-dentistry')
+                'primary' => esc_html__('Primary Menu', 'aesthetic-dentistry'),
+                'header-tabs' => esc_html__('Header Tabs', 'aesthetic-dentistry')
             )
         );
     }

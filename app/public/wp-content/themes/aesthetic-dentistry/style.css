@@ -12,9 +12,82 @@ Version: 1.0
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html#license-text
 Text Domain: wolddmd
-*/
+*/;
+.header-links {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    z-index: 9;
+}
+.fa-yelp {
+    font-size: 24px;
+}
+.header-links .col-3 {
+    width: 20%;
+}
+.header-links a {
+    background-color: transparent;
+    border-width: 3px 0 3px 3px;
+    border-color: #397da8;
+    background-color: #397da8;
+    color: white;
+    border-style: solid;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.header-links a:hover {
+    background-color: white;
+    color: #397da8;
+}
+nav.navbar {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    height: 100px;
+}
+.navbar-nav {
+    padding-left: 20% !important;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+}
+.menu-item {
+    padding: 0 15px;
+}
+.menu-item a {
+    text-decoration: none;
+    color: #397da8;
+}
+.navbar-brand {
+    height: 175px;
+    width: 175px;
+}
+.banner {
+    height: 400px;
+    margin-top: -30px;
+}
+.dental-features .container {
+    max-width: 1200px;
+}
+.dental-features .row{
+    margin-top: -150px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 20px #444;
+}
+.dental-features .col {
+    text-align: center;
+    margin: 0 auto;
+}
 
-.dental-features img {
-    height: 200px;
-    width: 200px;
+.form-check .form-check-input {
+    float: none !important;
+    border: none;
+}
+
+footer {
+    background-color: #525252;
+}
+footer p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
 }

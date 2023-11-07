@@ -1,0 +1,72 @@
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-form-label">
+                <label for="name" class="form-label">Name: <sup>*</sup></label>
+            </div>
+            <div class="col-sm-8">
+                <input id="name" type="text" class="form-control" placeholder="Name">
+                [text* name class:form-control id:name placeholder "Name"]
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-form-label">
+                <label for="phone" class="form-label">Phone: <sup>*</sup></label>
+            </div>
+            <div class="col-sm-8">
+                <input id="phone" type="text" class="form-control" placeholder="Phone Number">
+                [text* phone class:form-control id:phone placeholder "Phone Number"]
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-form-label">
+                <label for="email" class="form-label">Email Address: <sup>*</sup></label>
+            </div>
+            <div class="col-sm-8">
+                <input id="email" type="email" class="form-control" placeholder="Email Address">
+                [email* email class:form-control id:email placeholder "Email Address"]
+            </div>
+        </div>
+
+          <fieldset class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Have you visited our office before? <sup>*</sup></legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                [radio* visited-before default:1 "Yes" "No" class:form-check-input]
+                <input class="form-check-input" type="radio" name="visited-yes" id="visited-yes" value="Yes">
+                <label class="form-check-label" for="visited-yes">Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="visited-no" id="visited-no" value="No">
+                <label class="form-check-label" for="visited-yes">No</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="row">
+            <legend class="col-form-label col-sm-2 pt-0">What is the reason for the appointment? <sup>*</sup></legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                [radio* visited-before label_first default:1 "Yes" "No" class: ]
+                <input class="form-check-input" type="radio" name="regular-exam" id="regular-exam" value="Yes">
+                <label class="form-check-label" for="visited-yes">Regular Exam / Cleaning</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="specific-procedure" id="specific-procedure" value="Specific Concern / Procedure">
+                <label class="form-check-label" for="visited-yes">Specific Concern / Procedure</label>
+              </div>
+            </div>
+          </fieldset>
+
+        <div class="row">
+            <div class="col-sm-2 col-form-label">
+                <label for="concerns" class="form-label">What concerns, if any, would you like to speak to the doctor about:</label>
+            </div>
+            <div class="col-sm-8">
+                <textarea id="concerns" rows="3" class="form-control"></textarea>
+                [textarea concerns class:form-control id:concerns x3]
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        [submit class:btn class:btn-primary "Submit"]
+    </div>

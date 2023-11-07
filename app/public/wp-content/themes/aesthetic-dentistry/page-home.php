@@ -21,8 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1><?php bloginfo('name');?></h1>
-                <h3><?php bloginfo('description');?></h3>
+          
             </div>
         </div>
     </div>
@@ -30,16 +29,16 @@
 
 <div class="dental-features">
     <div class="container">
-        <div class="row">
-            <div class="col-4"> <!-- ad links --> 
+        <div class="row gx-4">
+            <div class="col">
                 <img src="<?php echo $dental_feature_1_image; ?>" height="200" width="200 "/>
                 <h3><?php echo $dental_feature_1_title; ?></h3>
             </div>
-            <div class="col-4">
+            <div class="col">
                 <img src="<?php echo $dental_feature_2_image; ?>" height="200" width="200 "/>
                 <h3><?php echo $dental_feature_2_title; ?></h3>
             </div>
-            <div class="col-4">
+            <div class="col">
                 <img src="<?php echo $dental_feature_3_image; ?>" height="200" width="200 "/>
                 <h3><?php echo $dental_feature_3_title; ?></h3>
             </div>

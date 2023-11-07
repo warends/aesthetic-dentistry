@@ -15,7 +15,7 @@
             <?php the_content(); ?>
         </div>
     </div>
-    <div class="container">
+    <!--<div class="container">
         <div class="row">
             <?php $loop = new WP_Query( array ( 'post_type' => 'employees', 'orderby' => 'post_id', 'order' => 'ASC' ) ) ?>
 
@@ -31,7 +31,7 @@
                 </div>
             <?php endwhile;?>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <?php get_footer(); ?>
