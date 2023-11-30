@@ -13,14 +13,70 @@ License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html#license-text
 Text Domain: wolddmd
 */;
+:root {
+    --blue: #397da8;
+    --mq-sm: 576px;
+    --mq-md: 768px;
+    --mq-lg: 992px;
+    --mq-xl: 1200px;
+}
+.content-area {
+    margin-top: 60px;
+}
+.elementor-tabs .elementor-tab-title {
+    padding: 10px !important;
+    text-align: center;
+}
+.elementor-tabs .elementor-tab-title.elementor-active {
+    background-color: var(--blue);
+    border-radius: 4px;
+    color: white;
+}
+.theplus-tabs-wrapper .plus-tabs-nav .plus-tab-header {
+    font-weight: 700;
+}
+.theplus-tabs-wrapper .plus-tabs-nav .plus-tab-header.active {
+    background-color: var(--blue);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    color: white !important;
+    padding: 15px !important;
+}
+.theplus-tabs-wrapper.elementor-tabs .elementor-tabs-content-wrapper {
+    border: 4px solid var(--blue);
+}
+.elementor-tabs-view-horizontal .theplus-tabs-wrapper .plus-tabs-nav .plus-tab-header {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.theplus-tabs-wrapper .theplus-tabs-nav-wrapper .plus-tabs-nav {
+    box-shadow: none !important;
+}
+.btn.btn-primary {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 0;
+    border: 1px var(--blue) solid;
+    border-radius: 4px;
+}
+.btn.btn-primary:hover {
+    background-color: white;
+    color: var(--blue);
+}
 .header-links {
     position: absolute;
     right: 0;
-    top: 25px;
+    top: 0;
     z-index: 9;
 }
 .fa-yelp {
     font-size: 24px;
+}
+.elementor-icon .fa-yelp {
+    font-size: 34px;
+}
+.header-links .health-grades img{
+    max-width: 25px;
 }
 .header-links .col-3 {
     width: 20%;
@@ -28,66 +84,205 @@ Text Domain: wolddmd
 .header-links a {
     background-color: transparent;
     border-width: 3px 0 3px 3px;
-    border-color: #397da8;
-    background-color: #397da8;
+    border-color: var(--blue);
+    background-color: var(--blue);
     color: white;
     border-style: solid;
     text-decoration: none;
     padding: 10px 0;
+    border-right: 2px solid white;
+    width: 15%;
+}
+.header-links a:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 2px solid white;
+}
+.header-links a:last-child {
+    border-right: none;
 }
 .header-links a:hover {
     background-color: white;
     color: #397da8;
 }
+.logo {
+    max-width: 125px !important;
+}
 nav.navbar {
     position: relative;
     width: 100%;
-    margin-top: 25px;
-    height: 100px;
+    margin-top: 0px;
+    height: 90px;
+}
+.navbar-collapse.collapse.show {
+    background-color: white;
+    border: 4px solid var(--blue);
+    border-radius: 4px;
+    z-index: 999;
+    transition: none;
+}
+.navbar-collapse.collapsing {
+    transition: none !important;
+}
+.navbar-toggler {
+    transition: none;
 }
 .navbar-nav {
-    padding-left: 20% !important;
     border-top: 1px solid #ccc;
     padding-top: 5px;
 }
 .menu-item {
-    padding: 0 15px;
+    padding: 5px 15px;
 }
 .menu-item a {
     text-decoration: none;
-    color: #397da8;
+    color: #525252
+}
+.menu-item a:hover {
+    text-decoration: none;
+    color: var(--blue);
 }
 .navbar-brand {
-    height: 175px;
-    width: 175px;
+    height: 125px;
+    width: 125px;
 }
-.banner {
-    height: 400px;
-    margin-top: -30px;
+.navbar-toggler-icon {
+    font-size: 34px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2868, 68, 68, 0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.home-banner {
+    height: 300px;
+    margin-top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .dental-features .container {
     max-width: 1200px;
 }
 .dental-features .row{
-    margin-top: -150px;
+    margin-top: -120px;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 20px #444;
 }
-.dental-features .col {
+.dental-features .col-sm-4 {
     text-align: center;
     margin: 0 auto;
+}
+.dental-features img {
+    max-width: 300px;
+}
+.dental-features a {
+    text-decoration: none;
 }
 
 .form-check .form-check-input {
     float: none !important;
     border: none;
 }
-
+.tss-wrapper .single-item-wrapper h3.author-name {
+    color: white !important;
+}
 footer {
     background-color: #525252;
+    position: relative;
+    margin-top: 150px;
+    padding-top: 90px;
 }
 footer p {
     color: white;
     margin-top: 0;
     margin-bottom: 0;
+}
+footer .col-sm-4 {
+    margin-bottom: 20px;
+}
+footer h3 {
+    color: #e7caaa !important;
+}
+.footer-logo {
+    position: absolute;
+    top: -70px;
+    left: 32%;
+}
+.footer-logo img {
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 125px; /* Need a specific value to work */
+}
+.elementor-tab-content .plus-content-editor {
+    margin-bottom: 20px;
+}
+.elementor-tab-content img {
+    display: block;
+    float: none !important;
+    margin-bottom: 20px;
+}
+.theplus-tabs-wrapper .plus-tabs-nav.full-width {
+    display: block;
+    border: 4px solid var(--blue);
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 576px) {
+    .navbar-brand {
+        height: 175px;
+        width: 175px;
+    }
+    .logo {
+        max-width: 175px !important;
+    }
+    .header-links a {
+        max-width: 5%;
+    }
+    nav.navbar {
+        margin-top: 40px;
+        height: 100px;
+    }
+    .menu-item {
+        padding: 0 15px;
+    }
+    .elementor-tab-content img {
+        display: inherit !important;
+        float: right !important;
+    }
+    .home-banner {
+        height: 500px;
+        margin-top: -30px;
+        background-size: cover;
+    }
+    .footer-logo {
+        top: -130px;
+        left: 40%;
+    }
+    .footer-logo img {
+        width: 200px;
+    }
+    .theplus-tabs-wrapper .plus-tabs-nav.full-width {
+        display: flex;
+        border: none;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    nav.navbar {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) { 
+    /* .navbar-nav {
+        padding-left: 100px !important;
+    } */
+    nav.navbar {
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
 }

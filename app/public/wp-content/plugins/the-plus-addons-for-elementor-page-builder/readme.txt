@@ -4,7 +4,7 @@ Tags: Elementor, elementor widgets, elements, elementor addon, elementor templat
 Requires at least: 6.0
 Tested up to: 6.3
 Requires PHP: 7.0
-Stable tag: 5.2.18
+Stable tag: 5.2.19
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -415,6 +415,15 @@ We have the most advanced caching architecture, Which will never bloat your site
 12. Unique 22+ Elementor Extensions
 
 == Changelog ==
+
+= 5.2.19 =
+Add : Gallery Listing : Border Radius on hover of feature Image
+Add : Button : Border Radius on Hover
+Fix : Number Counter : Icon and Title Style Gradient Color Icon not showing
+Fix : Progress Bar : Pie chart style 2 layout break
+Improvement : Blockquote : Style 1 CSS Improvement 
+Improvement : Number Counter : Icon Style condition Improvement
+Fix : Minor bug fixes & Improvements
 
 = 5.2.18 =
 Fix : Live Copy : Cross-Domain Copy Paste

@@ -800,6 +800,16 @@ class L_ThePlus_Gallery_ListOut extends Widget_Base {
 				'separator' => 'before',
 			]
 		);
+		$this->add_control('hover_image_border_radius',
+			[
+				'label'      => esc_html__( 'Border Radius', 'theplus' ),
+				'type'       => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%' ],
+				'selectors'  => [
+					'{{WRAPPER}} .gallery-list .gallery-list-content:hover, {{WRAPPER}} .gallery-list .post-inner-loop .gallery-list-content:hover .gallery-bg-image-metro, {{WRAPPER}} .gallery-list-content:hover .attachment-tp-image-grid.size-tp-image-grid, {{WRAPPER}} .gallery-list-content:hover .attachment-full.size-full' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
 		$this->end_controls_tab();
 		$this->end_controls_tabs();
 				

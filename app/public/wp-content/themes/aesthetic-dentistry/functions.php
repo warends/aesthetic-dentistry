@@ -2,7 +2,6 @@
 
 if (!function_exists('ad_setup')) {
     function ad_setup() {
-        // load_theme_textdomain('aesthetic-dentistry', get_template_directory() . '/languages');
         add_theme_support('title-tag');
         add_theme_support('posts-thumbnails');
         add_theme_support( 'block-templates' );

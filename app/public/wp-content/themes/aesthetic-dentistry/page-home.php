@@ -17,43 +17,36 @@
 ?>
 
 
-<div class="banner" style="background-image: url(<?php echo $banner;?>);">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-          
-            </div>
-        </div>
-    </div>
+<div class="home-banner" style="background-image: url(<?php echo $banner;?>);">
 </div>
 
 <div class="dental-features">
     <div class="container">
         <div class="row gx-4">
-            <div class="col">
-                <img src="<?php echo $dental_feature_1_image; ?>" height="200" width="200 "/>
+            <div class="col-sm-4">
+            <a href="/dental-services/#dental-implants">
+                <img class="img-fluid" src="<?php echo $dental_feature_1_image; ?>"/>
                 <h3><?php echo $dental_feature_1_title; ?></h3>
+            </a>
             </div>
-            <div class="col">
-                <img src="<?php echo $dental_feature_2_image; ?>" height="200" width="200 "/>
-                <h3><?php echo $dental_feature_2_title; ?></h3>
+            <div class="col-sm-4">
+                <a href="/cosmetic-dentistry/">
+                    <img class="img-fluid" src="<?php echo $dental_feature_2_image; ?>"/>
+                    <h3><?php echo $dental_feature_2_title; ?></h3>
+                </a>
             </div>
-            <div class="col">
-                <img src="<?php echo $dental_feature_3_image; ?>" height="200" width="200 "/>
-                <h3><?php echo $dental_feature_3_title; ?></h3>
+            <div class="col-sm-4">
+                <a href="/dental-services/#crowns-bridges">
+                    <img class="img-fluid" src="<?php echo $dental_feature_3_image; ?>"/>
+                    <h3><?php echo $dental_feature_3_title; ?></h3>
+                </a>
             </div>
         </div>
     </div>
 </div>
 
 <div class="content-area">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <?php the_content(); ?>
-            </div>
-        </div>
-    </div>
+    <?php the_content(); ?>
 </div>
 
 <?php get_footer(); ?>

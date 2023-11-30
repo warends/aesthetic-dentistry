@@ -674,6 +674,80 @@ class L_ThePlus_Button extends Widget_Base {
 			]
 		);
 		$this->add_control(
+			'hover_button_border_style',
+			[
+				'label'   => esc_html__( 'Border Style', 'theplus' ),
+				'type'    => Controls_Manager::SELECT,
+				'default' => 'solid',
+				'options' => [
+					'none'   => esc_html__( 'None', 'theplus' ),
+					'solid'  => esc_html__( 'Solid', 'theplus' ),
+					'dotted' => esc_html__( 'Dotted', 'theplus' ),
+					'dashed' => esc_html__( 'Dashed', 'theplus' ),
+					'groove' => esc_html__( 'Groove', 'theplus' ),
+				],
+				'selectors'  => [
+					'{{WRAPPER}} .pt_plus_button.button-style-4 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-5 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-8 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-10 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-11 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-12 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-13 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-14 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-16 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-17 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-19 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-20 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-21 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-22 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-24 .button-link-wrap:hover' => 'border-style: {{VALUE}};',
+				],
+				'separator' => 'before',
+				'condition' => [
+					'button_style' => ['style-4','style-5','style-8','style-10','style-11','style-12','style-13','style-14','style-16','style-17','style-19','style-20','style-21','style-22','style-24'],
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'hover_button_border_width',
+			[
+				'label' => esc_html__( 'Border Width', 'theplus' ),
+				'type'  => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%' ],
+				'default' => [
+					'top'    => 1,
+					'right'  => 1,
+					'bottom' => 1,
+					'left'   => 1,
+				],
+				'selectors'  => [
+					'{{WRAPPER}} .pt_plus_button.button-style-4 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-5 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-8 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-10 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-11 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-12 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-13 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-14 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-16 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-16 .button-link-wrap::before,
+					{{WRAPPER}} .pt_plus_button.button-style-17 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-19 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-20 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-21 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-22 .button-link-wrap:hover,
+					{{WRAPPER}} .pt_plus_button.button-style-24 .button-link-wrap:hover' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+				'condition' => [
+					'button_style' => ['style-4','style-5','style-8','style-10','style-11','style-12','style-13','style-14','style-16','style-17','style-19','style-20','style-21','style-22','style-24'],
+					'hover_button_border_style!' => 'none',
+				]
+			]
+		);
+		
+		$this->add_control(
 			'button_border_hover_color',
 			[
 				'label'     => esc_html__( 'Hover Border Color', 'tpebl' ),

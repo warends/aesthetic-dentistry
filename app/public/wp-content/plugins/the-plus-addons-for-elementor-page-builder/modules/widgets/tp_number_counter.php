@@ -447,7 +447,7 @@ class L_ThePlus_Number_Counter extends Widget_Base {
 					],
 					'gradient' => [
 						'title' => esc_html__( 'Gradient', 'tpebl' ),
-						'icon' => 'fa fa-barcode',
+						'icon' => 'eicon-barcode',
 					],
 				],
 				'label_block' => false, 
@@ -601,7 +601,7 @@ class L_ThePlus_Number_Counter extends Widget_Base {
 				],
 				'separator' => 'before',
 				'condition' => [
-					'icon_style!' => ['hexagon','pentagon','square-rotate'],
+					'icon_style!' => ['','hexagon','pentagon','square-rotate'],
 				],
 			]
 		);
@@ -614,6 +614,7 @@ class L_ThePlus_Number_Counter extends Widget_Base {
 				'selectors'  => [
 					'{{WRAPPER}} .plus-number-counter .counter-icon-inner' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
+				'separator' => 'before',
 				'condition' => [
 					'icon_style!' => ['hexagon','pentagon','square-rotate'],
 				],
@@ -648,7 +649,7 @@ class L_ThePlus_Number_Counter extends Widget_Base {
 					],
 					'gradient' => [
 						'title' => esc_html__( 'Gradient', 'tpebl' ),
-						'icon' => 'fa fa-barcode',
+						'icon' => 'eicon-barcode',
 					],
 				],
 				'label_block' => false,
@@ -801,7 +802,7 @@ class L_ThePlus_Number_Counter extends Widget_Base {
 				],
 				'separator' => 'before',
 				'condition' => [
-					'icon_style!' => ['hexagon','pentagon','square-rotate'],
+					'icon_style!' => ['','hexagon','pentagon','square-rotate'],
 				],
 			]
 		);
@@ -814,6 +815,7 @@ class L_ThePlus_Number_Counter extends Widget_Base {
 				'selectors'  => [
 					'{{WRAPPER}} .plus-number-counter .number-counter-inner-block:hover .counter-icon-inner' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
+				'separator' => 'before',
 				'condition' => [
 					'icon_style!' => ['hexagon','pentagon','square-rotate'],
 				],
@@ -904,7 +906,7 @@ class L_ThePlus_Number_Counter extends Widget_Base {
 					],
 					'gradient' => [
 						'title' => esc_html__( 'Gradient', 'tpebl' ),
-						'icon' => 'fa fa-barcode',
+						'icon' => 'eicon-barcode',
 					],
 				],
 				'label_block' => false,
@@ -1054,7 +1056,7 @@ class L_ThePlus_Number_Counter extends Widget_Base {
 					],
 					'gradient' => [
 						'title' => esc_html__( 'Gradient', 'tpebl' ),
-						'icon' => 'fa fa-barcode',
+						'icon' => 'eicon-barcode',
 					],
 				],
 				'label_block' => false,

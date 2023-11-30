@@ -1127,19 +1127,19 @@ class L_ThePlus_Progress_Bar extends Widget_Base {
 								$progress_bar .= '<div class="pie_chart " >';
 								if(!empty($settings['icon_postition']) && $settings['icon_postition'] == 'before'){
 									$progress_bar .= '<div class="pie_chart " >';
-									$progress_bar .= $progress_bar_img;
-								$progress_bar .= '</div >';	
+										$progress_bar .= $progress_bar_img;
+									$progress_bar .= '</div>';	
 								}
 								$progress_bar .= '<div class="pie_chart-style2">';
-								$progress_bar .= $title_content;
-								$progress_bar .= $subtitle_content;
+									$progress_bar .= $title_content;
+									$progress_bar .= $subtitle_content;
 								$progress_bar .= '</div>';
 								if(!empty($settings['icon_postition']) && $settings['icon_postition'] == 'after'){
 									$progress_bar .= '<div class="pie_chart " >';
-									$progress_bar .= $progress_bar_img;
-								$progress_bar .= '</div >';	
+										$progress_bar .= $progress_bar_img;
+									$progress_bar .= '</div >';	
 								}
-
+								$progress_bar .= '</div>';
 							$progress_bar .= '</div>';
 						}else if($pie_chart_style == 'style_3'){
 							$progress_bar .= '<div class="pt-plus-pie_chart style-3">';
